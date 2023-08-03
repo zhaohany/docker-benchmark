@@ -1,0 +1,88 @@
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.3                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   January 13, 2011                   johantheghost at yahoo period com
+
+------------------------------------------------------------------------------
+   Use directories for:
+      * File I/O tests (named fs***) = /usr/local/bin/byte-unixbench/UnixBench/tmp
+      * Results                      = /usr/local/bin/byte-unixbench/UnixBench/results
+------------------------------------------------------------------------------
+
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: b7202d382449: GNU/Linux
+   OS: GNU/Linux -- 5.4.0-155-generic -- #172-Ubuntu SMP Fri Jul 7 16:10:02 UTC 2023
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap="ANSI_X3.4-1968", collate="ANSI_X3.4-1968")
+   CPU 0: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz (4988.4 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   13:32:44 up 0 min,  0 users,  load average: 0.00, 0.00, 0.00; runlevel 
+
+------------------------------------------------------------------------
+Benchmark Run: Thu Aug 03 2023 13:32:44 - 14:00:56
+1 CPU in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       32578361.4 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     5383.5 MWIPS (9.9 s, 7 samples)
+Execl Throughput                                150.2 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks          7087.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks            1804.7 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks         29088.5 KBps  (30.0 s, 2 samples)
+Pipe Throughput                              658625.7 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                  62838.1 lps   (10.0 s, 7 samples)
+Process Creation                               6915.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                    578.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    199.3 lpm   (60.2 s, 2 samples)
+System Call Overhead                         362237.1 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   32578361.4   2791.6
+Double-Precision Whetstone                       55.0       5383.5    978.8
+Execl Throughput                                 43.0        150.2     34.9
+File Copy 1024 bufsize 2000 maxblocks          3960.0       7087.3     17.9
+File Copy 256 bufsize 500 maxblocks            1655.0       1804.7     10.9
+File Copy 4096 bufsize 8000 maxblocks          5800.0      29088.5     50.2
+Pipe Throughput                               12440.0     658625.7    529.4
+Pipe-based Context Switching                   4000.0      62838.1    157.1
+Process Creation                                126.0       6915.5    548.8
+Shell Scripts (1 concurrent)                     42.4        578.1    136.3
+Shell Scripts (8 concurrent)                      6.0        199.3    332.2
+System Call Overhead                          15000.0     362237.1    241.5
+                                                                   ========
+System Benchmarks Index Score                                         166.9
